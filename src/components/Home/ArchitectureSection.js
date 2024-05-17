@@ -1,9 +1,9 @@
-import Sections from "./Sections";
+import SectionsPattern from "./SectionsPattern";
 
 const ArchitectureSection = () => {
   return (
     <div>
-      <Sections
+      <SectionsPattern
         content={
           <div className="text-5xl w-8/12 ">
             <h2 className="mb-12">Architecture</h2>

@@ -14,22 +14,22 @@ const Heaader = () => {
           </div>
           <div>
             <ul className="flex gap-4 lead-none text-lg ">
-              <li>
+              <li className="hover-effect">
                 <NavLink to="/all-projects">All Projects</NavLink>
               </li>
-              <li>
+              <li className="hover-effect">
                 <NavLink to="/architecture">Architecture</NavLink>
               </li>
-              <li>
+              <li className="hover-effect">
                 <NavLink to="/development">Development</NavLink>
               </li>
-              <li>
+              <li className="hover-effect">
                 <NavLink to="/content">Writings and Visuals</NavLink>
               </li>
-              <li>
+              <li className="hover-effect">
                 <NavLink to="/about">About</NavLink>
               </li>
-              <li>
+              <li className="hover-effect">
                 <NavLink to="/contact">Contact</NavLink>
               </li>
             </ul>

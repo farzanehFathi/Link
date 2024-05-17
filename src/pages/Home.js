@@ -1,12 +1,12 @@
 import Hero from "../components/Home/Hero";
-import About from "../components/Home/About";
+import AboutSection from "../components/Home/AboutSection";
 import ArchitectureSection from "../components/Home/ArchitectureSection";
 
 const Home = () => {
   return (
     <div>
       <Hero />
-      <About />
+      <AboutSection />
       <ArchitectureSection />
     </div>
   );

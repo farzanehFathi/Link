@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .hover-effect {
+    @apply hover:opacity-50;
+  }
+
+  .active {
+    @apply opacity-50;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;

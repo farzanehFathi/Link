@@ -1,9 +1,9 @@
-import Sections from "./Sections";
+import SectionsPattern from "./SectionsPattern";
 
-const About = () => {
+const AboutSection = () => {
   return (
     <div className="bg-bg1">
-      <Sections
+      <SectionsPattern
         content={
           <p className="text-6xl w-8/12">
             Fari is a multifaceted individual enthusiastic about building
@@ -11,9 +11,10 @@ const About = () => {
           </p>
         }
         title={"About Fari"}
+        url={"/about"}
       />
     </div>
   );
 };
 
-export default About;
+export default AboutSection;
