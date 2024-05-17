@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Heaader = () => {
   return (
-    <div className="fixed top-0 left-0 bg-white w-full pt-5 pb-6 ">
+    <div className="fixed top-0 left-0 bg-white w-full pt-5 pb-6 z-3000">
       <div className="relevant w-90p max-w-1800px mx-auto">
         <div className="flex">
           <div className="w-27p mr-2">

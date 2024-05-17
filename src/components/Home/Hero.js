@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 
 // Import photos
-import autumn from "../imgs/Home/autumn.jpg";
-import coffee from "../imgs/Home/coffee.jpg";
-import diaries from "../imgs/Home/diaries.jpg";
-import laptop from "../imgs/Home/laptop.jpg";
-import life from "../imgs/Home/life.jpg";
-import mags from "../imgs/Home/mags.jpg";
-import mailbox from "../imgs/Home/mailbox.jpg";
-import notebook from "../imgs/Home/notebook.jpg";
+import autumn from "../../imgs/Home/autumn.jpg";
+import coffee from "../../imgs/Home/coffee.jpg";
+import diaries from "../../imgs/Home/diaries.jpg";
+import laptop from "../../imgs/Home/laptop.jpg";
+import life from "../../imgs/Home/life.jpg";
+import mags from "../../imgs/Home/mags.jpg";
+import mailbox from "../../imgs/Home/mailbox.jpg";
+import notebook from "../../imgs/Home/notebook.jpg";
 
 function AlternateImage({ imageUrls, currentImage }) {
   const imageSrc = imageUrls[currentImage % imageUrls.length];
