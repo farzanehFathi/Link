@@ -7,27 +7,28 @@ const Heaader = () => {
         <div className="flex">
           <div className="w-27p mr-2">
             <NavLink to="/">
-              <h1 className="text-2xl leading-none font-bold">
-                Fari<span className="font-light">'s Diaries</span>
+              <h1 className="text-3xl leading-none font-bold">
+                LINK<span className="font-light"> Arkitectur</span>
               </h1>
             </NavLink>
           </div>
           <div>
-            <ul className="flex gap-4 lead-none text-lg ">
+            <ul className="flex gap-4 lead-none text-lg">
               <li className="hover-effect">
-                <NavLink to="/all-projects">All Projects</NavLink>
+                <NavLink to="/all-projects">Projects</NavLink>
               </li>
               <li className="hover-effect">
-                <NavLink to="/architecture">Architecture</NavLink>
+                <NavLink to="/architecture">Services</NavLink>
               </li>
               <li className="hover-effect">
-                <NavLink to="/development">Development</NavLink>
+                <NavLink to="/development">Sustainability</NavLink>
               </li>
               <li className="hover-effect">
-                <NavLink to="/content">Writings and Visuals</NavLink>
+                <NavLink to="/content">About</NavLink>
               </li>
+
               <li className="hover-effect">
-                <NavLink to="/about">About</NavLink>
+                <NavLink to="/about">Career</NavLink>
               </li>
               <li className="hover-effect">
                 <NavLink to="/contact">Contact</NavLink>

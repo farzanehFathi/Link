@@ -6,11 +6,11 @@ const AboutSection = () => {
       <SectionsPattern
         content={
           <p className="text-6xl w-8/12">
-            Fari is a multifaceted individual enthusiastic about building
-            technologies, web, and content.
+            LINK Arkitektur is a leading Scandinavian architectural business in
+            Denmark, Norway and Sweden.
           </p>
         }
-        title={"About Fari"}
+        title={"About LINK "}
         url={"/about"}
       />
     </div>

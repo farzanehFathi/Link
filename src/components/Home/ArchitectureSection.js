@@ -6,22 +6,25 @@ const ArchitectureSection = () => {
       <SectionsPattern
         content={
           <div className="text-5xl w-8/12 ">
-            <h2 className="mb-12">Architecture</h2>
+            <h2 className="mb-12">All services</h2>
             <h2 className="mb-6">
-              <span>&#8594; </span>Energy Modellings
+              <span>&#8594; </span>Architecture
             </h2>
             <h2 className="mb-6">
-              <span>&#8594; </span>Revit Architecture Works
+              <span>&#8594; </span>Interior Architecture
             </h2>
             <h2 className="mb-6">
-              <span>&#8594; </span>Revit Structure Works
+              <span>&#8594; </span>Landscape
             </h2>
             <h2 className="mb-6">
-              <span>&#8594; </span>Research Studies
+              <span>&#8594; </span>Transformation
+            </h2>
+            <h2 className="mb-6">
+              <span>&#8594; </span>Digital practice
             </h2>
           </div>
         }
-        title={"Architecture"}
+        title={"Services"}
       />
     </div>
   );

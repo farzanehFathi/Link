@@ -1,14 +1,10 @@
 import { useState, useEffect } from "react";
 
 // Import photos
-import autumn from "../../imgs/Home/autumn.jpg";
-import coffee from "../../imgs/Home/coffee.jpg";
-import diaries from "../../imgs/Home/diaries.jpg";
-import laptop from "../../imgs/Home/laptop.jpg";
-import life from "../../imgs/Home/life.jpg";
-import mags from "../../imgs/Home/mags.jpg";
-import mailbox from "../../imgs/Home/mailbox.jpg";
-import notebook from "../../imgs/Home/notebook.jpg";
+import felixgerlach from "../../imgs/Home/felixgerlach.jpg";
+import Lierstranda from "../../imgs/Home/Lierstranda.jpg";
+import Spritfabriken from "../../imgs/Home/Spritfabriken.jpg";
+import TheParkside from "../../imgs/Home/TheParkside.jpg";
 
 function AlternateImage({ imageUrls, currentImage }) {
   const imageSrc = imageUrls[currentImage % imageUrls.length];
@@ -22,14 +18,10 @@ function AlternateImage({ imageUrls, currentImage }) {
 }
 const Hero = () => {
   const [imageUrls, setImageUrls] = useState([
-    autumn,
-    coffee,
-    diaries,
-    laptop,
-    life,
-    mags,
-    mailbox,
-    notebook,
+    felixgerlach,
+    Lierstranda,
+    Spritfabriken,
+    TheParkside,
   ]);
 
   const [currentImage, setCurrentImage] = useState(0);
@@ -39,7 +31,7 @@ const Hero = () => {
       setCurrentImage((prevCurrentImage) =>
         prevCurrentImage === imageUrls.length - 1 ? 0 : prevCurrentImage + 1
       );
-    }, 5000);
+    }, 10000);
     return () => clearInterval(intervalId);
   }, [imageUrls]);
 
