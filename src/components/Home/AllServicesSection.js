@@ -1,6 +1,6 @@
 import SectionsPattern from "./SectionsPattern";
 
-const ArchitectureSection = () => {
+const AllServicesSection = () => {
   return (
     <div>
       <SectionsPattern
@@ -30,4 +30,4 @@ const ArchitectureSection = () => {
   );
 };
 
-export default ArchitectureSection;
+export default AllServicesSection;

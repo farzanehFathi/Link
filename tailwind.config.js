@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bg1: "#CCC6C1",
+        branding1: "#CCC6C1",
+        branding2: "#F5F4F0",
+        branding3: "#74706B",
+        branding4: "#343634",
       },
       spacing: {
         "70px": "70px",
@@ -12,6 +15,7 @@ module.exports = {
         "1800px": "1800px",
         "27p": "27%",
         "50p": "50%",
+        "73p": "73%",
         "80p": "80%",
         "90p": "90%",
       },

@@ -15,20 +15,20 @@ const Heaader = () => {
           <div>
             <ul className="flex gap-4 lead-none text-lg">
               <li className="hover-effect">
-                <NavLink to="/all-projects">Projects</NavLink>
+                <NavLink to="/projects">Projects</NavLink>
               </li>
               <li className="hover-effect">
-                <NavLink to="/architecture">Services</NavLink>
+                <NavLink to="/services">Services</NavLink>
               </li>
               <li className="hover-effect">
-                <NavLink to="/development">Sustainability</NavLink>
+                <NavLink to="/sustainability">Sustainability</NavLink>
               </li>
               <li className="hover-effect">
-                <NavLink to="/content">About</NavLink>
+                <NavLink to="/about">About</NavLink>
               </li>
 
               <li className="hover-effect">
-                <NavLink to="/about">Career</NavLink>
+                <NavLink to="/career">Career</NavLink>
               </li>
               <li className="hover-effect">
                 <NavLink to="/contact">Contact</NavLink>

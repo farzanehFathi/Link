@@ -2,7 +2,7 @@ import SectionsPattern from "./SectionsPattern";
 
 const AboutSection = () => {
   return (
-    <div className="bg-bg1">
+    <div className="bg-branding1">
       <SectionsPattern
         content={
           <p className="text-6xl w-8/12">
