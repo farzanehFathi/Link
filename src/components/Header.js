@@ -13,7 +13,7 @@ const Heaader = () => {
             </NavLink>
           </div>
           <div className="not-mobile w-8/12 flex justify-between items-center">
-            <ul className="flex gap-4 lead-none text-lg w-9/12">
+            <ul role="list" className="flex gap-4 lead-none text-lg w-9/12">
               <li className="hover-effect">
                 <NavLink to="/projects">Projects</NavLink>
               </li>

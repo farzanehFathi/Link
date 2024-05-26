@@ -17,11 +17,11 @@ const ContactSection = () => {
                 Are you interested in collaborating with us on a new project?
               </p>
               <Link>
-                <div className="flex gap-3 text-3xl hover:opacity-50">
+                <div className="flex gap-3 text-3xl hover:opacity-50 group">
                   <p className="block">
                     Whatever the case, don't hesitate to drop us a message
                   </p>
-                  <p className="block">&#8594;</p>
+                  <p className="span-x-translate">&#8594;</p>
                 </div>
               </Link>
             </div>
