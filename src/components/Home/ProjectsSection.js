@@ -12,7 +12,7 @@ const ProjectsSection = () => {
       <SectionsPattern
         content={
           <div className="flex flex-wrap w-11/12">
-            <div className="w-8/12 px-4 py-12">
+            <div className="w-8/12 px-4 pb-12">
               <Link>
                 <img src={Skolekvartalet} alt="Ski school quarter" />
                 <h3 className="text-3xl my-2">Ski school quarter</h3>
@@ -20,7 +20,7 @@ const ProjectsSection = () => {
               </Link>
             </div>
 
-            <div className="w-4/12 px-4 py-12">
+            <div className="w-4/12 px-4 pb-12">
               <Link>
                 <img src={Norrtälje} alt="Norrtälje Mortuary" />
                 <h3 className="text-3xl my-2">Norrtälje Mortuary</h3>

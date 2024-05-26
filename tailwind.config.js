@@ -9,7 +9,11 @@ module.exports = {
         branding3: "#74706B",
         branding4: "#343634",
       },
-      fontFamily: { Afacad: ["Afacad"] },
+      fontFamily: {
+        Poly: ["Poly"],
+        Montserrat: ["Montserrat"],
+        Inter: ["Inter"],
+      },
 
       spacing: {
         "70px": "70px",
