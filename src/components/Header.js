@@ -33,8 +33,11 @@ const Heaader = () => {
                 <NavLink to="/contact">Contact</NavLink>
               </li>
             </ul>
-            <div className="flex gap-4">
-              <div>🔍</div>
+            <div className="flex gap-4 content-end items-center text-lg">
+              <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+
               <div>EN</div>
             </div>
           </div>
