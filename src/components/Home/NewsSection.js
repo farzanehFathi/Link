@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import SectionsPattern from "./SectionsPattern";
 import ImgContainer from "../ImgContainer";
 

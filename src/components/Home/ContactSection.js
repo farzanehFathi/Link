@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import SectionsPattern from "./SectionsPattern";
-import ImgContainer from "../ImgContainer";
 
 import contactImg from "../../imgs/Home/MIR 1.jpg";
 

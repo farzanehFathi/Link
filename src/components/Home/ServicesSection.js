@@ -3,11 +3,11 @@ import SectionsPattern from "./SectionsPattern";
 
 const ServicesSection = () => {
   return (
-    <div className="bg-branding2">
+    <div className="bg-branding2 group">
       <SectionsPattern
         content={
           <Link>
-            <p className="text-6xl group">
+            <p className="text-6xl">
               <span className="block group-hover:text-branding3 mb-10">
                 We create space
               </span>
