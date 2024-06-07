@@ -7,8 +7,10 @@ const ServicesSection = () => {
       <SectionsPattern
         content={
           <Link>
-            <p className="text-6xl">
-              <span className="hover:text-branding3">We create space</span>
+            <p className="text-6xl group">
+              <span className="block group-hover:text-branding3 mb-10">
+                We create space
+              </span>
               <span className="block text-branding1">
                 for dialogue and teamwork
               </span>
