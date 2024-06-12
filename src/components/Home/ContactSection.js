@@ -13,11 +13,11 @@ const ContactSection = () => {
               <img src={contactImg} alt="" />
             </div>
             <div className="w-6/12">
-              <p className="text-5xl mb-24">
+              <p className="text-4xl lg:text-5xl mb-24">
                 Are you interested in collaborating with us on a new project?
               </p>
               <Link>
-                <div className="flex gap-3 text-3xl hover:opacity-50 group">
+                <div className="flex gap-3 text-2xl lg:text-3xl hover:opacity-50 group">
                   <p className="block">
                     Whatever the case, don't hesitate to drop us a message
                   </p>

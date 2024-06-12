@@ -12,8 +12,8 @@ const ProjectsSection = () => {
     <div>
       <SectionsPattern
         content={
-          <div className="flex flex-wrap w-11/12 text-3xl">
-            <div className="w-full flex justify-between align-top pb-20">
+          <div className="flex flex-wrap w-11/12 text-2xl lg:text-3xl">
+            <div className="w-full flex gap-4 justify-between align-top pb-20">
               <ImgContainer
                 width={"w-8/12"}
                 url={"#"}

@@ -7,7 +7,7 @@ const AboutSection = () => {
       <div className="bg-branding1 group hover:text-branding3">
         <SectionsPattern
           content={
-            <p className="text-6xl w-8/12 ">
+            <p className="text-5xl lg:text-6xl w-8/12 ">
               LINK Arkitektur is a leading Scandinavian architectural business
               in Denmark, Norway and Sweden.
             </p>

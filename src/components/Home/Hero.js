@@ -10,22 +10,22 @@ import TheParkside from "../../imgs/Home/TheParkside.jpg";
 const heroImgData = [
   {
     imgSrc: felixgerlach,
-    projectTitle: "Title 1",
+    projectTitle: "natrium",
     projectUrl: "#",
   },
   {
     imgSrc: Lierstranda,
-    projectTitle: "Title 2",
+    projectTitle: "Fjordbyen Lier og Drammen",
     projectUrl: "#",
   },
   {
     imgSrc: Spritfabriken,
-    projectTitle: "Title 3",
+    projectTitle: "Spritfabriken",
     projectUrl: "#",
   },
   {
     imgSrc: TheParkside,
-    projectTitle: "Title 4",
+    projectTitle: "The Parkside",
     projectUrl: "#",
   },
 ];

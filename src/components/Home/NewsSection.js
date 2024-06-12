@@ -9,7 +9,7 @@ const NewsSection = () => {
     <div>
       <SectionsPattern
         content={
-          <div className="flex gap-x-24 w-9/12 font-bold text-lg">
+          <div className="flex gap-x-24 w-9/12 font-bold text-base lg:text-lg">
             <ImgContainer
               width={"w-6/12"}
               url={"#"}
