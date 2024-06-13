@@ -17,7 +17,7 @@ const ImgContainer = ({
           <img className="object-fill" src={img} alt={alt} />
         </div>
         <h3 className={titleMY}>{title}</h3>
-        <p className="text-base lg:text-lg">{description}</p>
+        <p className="mb-5 md:mb-0 text-base lg:text-lg">{description}</p>
       </Link>
     </div>
   );

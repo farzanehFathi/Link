@@ -7,14 +7,14 @@ const Heaader = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full pt-5 z-3000 ${
+      className={`fixed top-0 left-0 w-full h-16 pt-4  z-3000 ${
         isOpen
           ? "bg-branding4 text-white transition-colors duration-300"
           : "bg-white"
       }`}
     >
       <div className="relevant w-11/12 max-w-1800px mx-auto">
-        <div className="flex justify-between items-start">
+        <div className="flex justify-between">
           <div className="w-7/12 xl:w-6/12 mr-2 relative">
             <NavLink to="/">
               <h1 className="text-3xl leading-none font-bold ">
@@ -39,9 +39,9 @@ const Heaader = () => {
           </div>
 
           {isOpen ? (
-            <div className="bg-branding4 fixed top-14 bottom-0 right-0 left-0 ">
+            <div className="bg-branding4 fixed top-16 bottom-0 right-0 left-0 ">
               <div className=" relevant w-11/12 max-w-1800px mx-auto">
-                <Link to="#" className="text-5xl mt-10 block hover-effect">
+                <Link to="#" className="text-5xl mt-6 block hover-effect">
                   Projects
                 </Link>
                 <Link to="#" className="text-5xl  block hover-effect">

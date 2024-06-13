@@ -9,9 +9,9 @@ const NewsSection = () => {
     <div>
       <SectionsPattern
         content={
-          <div className="flex gap-x-24 w-9/12 font-bold text-base lg:text-lg">
+          <div className="flex flex-wrap md:flex-nowrap gap-x-24 w-9/12 font-bold text-base lg:text-lg">
             <ImgContainer
-              width={"w-6/12"}
+              width={"w-11/12 md:w-6/12"}
               url={"#"}
               img={augmented}
               alt={"LINK Arkitektur launches The Augmented Architect"}
@@ -20,7 +20,7 @@ const NewsSection = () => {
             />
 
             <ImgContainer
-              width={"w-6/12"}
+              width={"w-11/12 md:w-6/12"}
               url={"#"}
               img={hospital}
               alt={"LINK Arkitektur wins hospital project in southern Sweden"}

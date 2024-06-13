@@ -48,7 +48,7 @@ const Hero = () => {
           <img
             src={currentImage.imgSrc}
             alt={currentImage.projectTitle}
-            className="object-cover h-[calc(100vh-74px)] w-full"
+            className="object-cover h-[calc(100vh-4rem)] w-full"
           />
         </Link>
         <Link to={currentImage.projectUrl}>
