@@ -1,74 +1,64 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Squash as Hamburger } from "hamburger-react";
+import Hamburger from "hamburger-react";
 
 const Heaader = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <div className="fixed top-0 left-0 bg-white w-full pt-5 pb-6 z-3000">
+    <div
+      className={`fixed top-0 left-0 w-full pt-5 z-3000 ${
+        isOpen
+          ? "bg-branding4 text-white transition-colors duration-300"
+          : "bg-white"
+      }`}
+    >
       <div className="relevant w-11/12 max-w-1800px mx-auto">
-        <div className="flex justify-between">
-          <div className="w-5/12 xl:w-6/12 mr-2 relative">
+        <div className="flex justify-between items-start">
+          <div className="w-7/12 xl:w-6/12 mr-2 relative">
             <NavLink to="/">
               <h1 className="text-3xl leading-none font-bold ">
                 LINK<span className="font-light"> Arkitectur</span>
               </h1>
             </NavLink>
           </div>
+
           {/* MOBILE ONLY */}
 
-          <div className="lg:hidden flex gap-4 content-end items-center text-lg">
+          <div className="lg:hidden flex gap-4 content-end items-start text-lg">
             <div>
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <div className={`scale-[0.7] z-3000 ${isOpen ? "text-white" : ""}`}>
+            <div
+              className={`-translate-y-2 scale-[0.7] z-3000 ${
+                isOpen ? "text-white" : ""
+              }`}
+            >
               <Hamburger toggled={isOpen} toggle={setOpen} />
             </div>
           </div>
 
           {isOpen ? (
-            <div className="bg-branding4 text-white fixed top-0 bottom-0 right-0 left-0">
-              <div className="fixed top-0 left-0 w-full pt-5 pb-6 z-3000">
-                <div className="relevant w-11/12 max-w-1800px mx-auto">
-                  <div className="flex justify-between">
-                    <div className="w-5/12 xl:w-6/12 mr-2">
-                      <NavLink to="/">
-                        <h1 className="text-3xl leading-none font-bold ">
-                          LINK<span className="font-light"> Arkitectur</span>
-                        </h1>
-                      </NavLink>
-                    </div>
-                    <div className="lg:hidden flex gap-4 content-end items-center text-lg">
-                      <div>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                      </div>
-                      <div className="opacity-0">
-                        <Hamburger />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="relevant w-11/12 max-w-1800px mx-auto">
-                  <Link to="#" className="text-5xl mt-10 block hover-effect">
-                    Projects
-                  </Link>
-                  <Link to="#" className="text-5xl  block hover-effect">
-                    Services
-                  </Link>
-                  <Link to="#" className="text-5xl block hover-effect">
-                    Sustainability
-                  </Link>
-                  <Link to="#" className="text-5xl block hover-effect">
-                    About
-                  </Link>
-                  <Link to="#" className="text-5xl block hover-effect">
-                    Career
-                  </Link>
-                  <Link to="#" className="text-5xl block hover:opacity-50">
-                    Contect
-                  </Link>
-                </div>
+            <div className="bg-branding4 fixed top-14 bottom-0 right-0 left-0 ">
+              <div className=" relevant w-11/12 max-w-1800px mx-auto">
+                <Link to="#" className="text-5xl mt-10 block hover-effect">
+                  Projects
+                </Link>
+                <Link to="#" className="text-5xl  block hover-effect">
+                  Services
+                </Link>
+                <Link to="#" className="text-5xl block hover-effect">
+                  Sustainability
+                </Link>
+                <Link to="#" className="text-5xl block hover-effect">
+                  About
+                </Link>
+                <Link to="#" className="text-5xl block hover-effect">
+                  Career
+                </Link>
+                <Link to="#" className="text-5xl block hover:opacity-50">
+                  Contect
+                </Link>
               </div>
             </div>
           ) : (
