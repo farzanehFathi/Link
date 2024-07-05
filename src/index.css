@@ -16,7 +16,7 @@
 
 @layer components {
   .hover-effect {
-    @apply hover:opacity-50;
+    @apply hover:opacity-50 hover:cursor-pointer transition-opacity ease-in-out delay-100;
   }
 
   .span-y-translate {
@@ -26,6 +26,7 @@
   .span-x-translate {
     @apply inline-block font-Inter group-hover:translate-x-2 transform transition-transform duration-300;
   }
+
   .active {
     @apply opacity-50;
   }
