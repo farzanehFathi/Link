@@ -38,7 +38,6 @@ const Projects = () => {
               "Transformation",
             ]}
           />
-          {/* </div> */}
         </div>
         <div className="group w-5/12 lg:w-4/12 relative border-b border-gray-500">
           <FilterForm
@@ -62,7 +61,7 @@ const Projects = () => {
             placeholder="Search by project title"
             className="block h-full grow text-black placeholder-black focus:outline-none "
           />
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-magnifying-glass text-lg pt-1"></i>
         </div>
       </div>
 

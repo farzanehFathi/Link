@@ -5,13 +5,20 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 
+// layouts
+import RootLayout from "./Layouts/RootLayout";
+import AdminPanelLayout from "./Layouts/AdminPanelLayout";
+
 //Pages
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import AddProjectLayout from "./Layouts/AddProjectLayout";
 
-// layouts
-import RootLayout from "./Layouts/RootLayout";
+//Components
+import AddProjectDetails from "./components/Admin/AddProjectDetails";
+import AddProjectDescription from "./components/Admin/AddProjectDescription";
+import AddProjectImages from "./components/Admin/AddProjectImages";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +26,16 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="projects" element={<Projects />} />
+      <Route path="adminpanel" element={<AdminPanelLayout />}>
+        <Route path="addproject" element={<AddProjectLayout />}>
+          <Route path="addprojectdetails" element={<AddProjectDetails />} />
+          <Route
+            path="addprojectdescription"
+            element={<AddProjectDescription />}
+          />
+          <Route path="addprojectimages" element={<AddProjectImages />} />
+        </Route>
+      </Route>
     </Route>
   )
 );
