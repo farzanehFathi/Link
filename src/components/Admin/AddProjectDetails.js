@@ -1,4 +1,4 @@
-import { Form } from "react-router-dom";
+import { Link, Form } from "react-router-dom";
 
 import MultiChoiceData from "../Admin/MultiChoiceData";
 
@@ -85,9 +85,12 @@ const AddProjectDetails = () => {
       </Form>
 
       <div className="flex justify-end pr-[180px]">
-        <button className="text-2xl my-12 py-1 hover-effect bg-branding3 text-center w-[120px]">
+        <Link
+          to="/adminpanel/addproject/addprojectdescription"
+          className="text-2xl mt-20 mb-4 py-1 px-12 bg-branding3 hover-effect"
+        >
           Next
-        </button>
+        </Link>
       </div>
     </div>
   );

@@ -20,12 +20,15 @@ import AddProjectDetails from "./components/Admin/AddProjectDetails";
 import AddProjectDescription from "./components/Admin/AddProjectDescription";
 import AddProjectImages from "./components/Admin/AddProjectImages";
 
+//Loaders
+import { projectsLoader } from "./components/ProjectsLoader";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
-      <Route path="projects" element={<Projects />} />
+      <Route path="projects" element={<Projects />} loader={projectsLoader} />
       <Route path="adminpanel" element={<AdminPanelLayout />}>
         <Route path="addproject" element={<AddProjectLayout />}>
           <Route path="addprojectdetails" element={<AddProjectDetails />} />
