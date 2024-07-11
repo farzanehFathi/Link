@@ -21,7 +21,7 @@ const MultiChoiceData = ({ title, options, isOpen }) => {
       </div>
       <div
         className={`pb-4 px-4 text-lg bg-branding3 text-white absolute top-0 left-0 right-0 z-50 transition-opacity ease-in-out duration-100 ${
-          open ? "visible" : "hidden"
+          open ? "h-full" : "h-0"
         } `}
       >
         <div
