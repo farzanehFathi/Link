@@ -16,7 +16,7 @@ const NewsSection = () => {
               img={augmented}
               alt={"LINK Arkitektur launches The Augmented Architect"}
               title={"LINK Arkitektur launches The Augmented Architect"}
-              description={"28.02.2023"}
+              tagline={"28.02.2023"}
             />
 
             <ImgContainer
@@ -25,7 +25,7 @@ const NewsSection = () => {
               img={hospital}
               alt={"LINK Arkitektur wins hospital project in southern Sweden"}
               title={"LINK Arkitektur wins hospital project in southern Sweden"}
-              description={"11.01.2022"}
+              tagline={"11.01.2022"}
             />
           </div>
         }

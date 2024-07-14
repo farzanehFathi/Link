@@ -21,7 +21,7 @@ const ProjectsSection = () => {
                 alt={"Ski school quarter"}
                 title={"Ski school quarter"}
                 titleMY={titleMY}
-                description={"Urban development in the heart of Ski"}
+                tagline={"Urban development in the heart of Ski"}
               />
 
               <ImgContainer
@@ -31,7 +31,7 @@ const ProjectsSection = () => {
                 alt={"Norrtälje Mortuary"}
                 title={"Norrtälje Mortuary"}
                 titleMY={titleMY}
-                description={"Tasteful design for a dignified farewell"}
+                tagline={"Tasteful design for a dignified farewell"}
               />
             </div>
             <div className="w-full flex flex-wrap justify-between align-top">
@@ -42,7 +42,7 @@ const ProjectsSection = () => {
                 alt={"Fællesskabets Hus"}
                 title={"Fællesskabets Hus"}
                 titleMY={titleMY}
-                description={"A space for care and domesticity"}
+                tagline={"A space for care and domesticity"}
               />
               <ImgContainer
                 width={"w-11/12 md:w-7/12"}
@@ -51,7 +51,7 @@ const ProjectsSection = () => {
                 alt={"Stovnertårnet - Stovner tower"}
                 title={"Stovnertårnet - Stovner tower"}
                 titleMY={titleMY}
-                description={" Norway's most inclusive landscape project"}
+                tagline={" Norway's most inclusive landscape project"}
               />
             </div>
           </div>

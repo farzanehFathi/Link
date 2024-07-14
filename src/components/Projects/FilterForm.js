@@ -1,16 +1,22 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-// import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
-const FilterForm = ({ title, options, isOpen, setFilter }) => {
-  const [open, setOpen] = useState(isOpen);
-  const [pageUrl, setPageUrl] = useSearchParams();
-
+const FilterForm = ({
+  title,
+  filterID,
+  options,
+  isOpen,
+  setFilter,
+  currentFilters,
+}) => {
   const formRef = useRef();
+  const navigate = useNavigate();
+
+  const [open, setOpen] = useState(isOpen);
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -23,6 +29,19 @@ const FilterForm = ({ title, options, isOpen, setFilter }) => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  const handleFilterClick = (option) => {
+    const updatedFilters = { ...currentFilters, [filterID]: option };
+
+    if (option === "All") {
+      delete updatedFilters[filterID];
+    }
+
+    setFilter(option);
+
+    const filterParams = new URLSearchParams(updatedFilters).toString();
+    navigate(`?${filterParams}`, { replace: true });
+  };
 
   return (
     <div ref={formRef}>
@@ -69,8 +88,8 @@ const FilterForm = ({ title, options, isOpen, setFilter }) => {
                 className="hover-effect"
                 key={option}
                 onClick={() => {
-                  setFilter(option);
                   setOpen(false);
+                  handleFilterClick(option);
                 }}
               >
                 {option}
