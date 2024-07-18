@@ -64,7 +64,7 @@ const FilterForm = ({
       <AnimatePresence initial={true}>
         {open && (
           <motion.div
-            className={`py-4  px-4 text-lg bg-branding2 absolute top-0 left-0 right-0 z-50 transition-opacity ease-in-out duration-100`}
+            className={`py-4  px-4 text-lg bg-branding2 absolute top-0 left-0 right-0 z-50`}
             key="modal"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

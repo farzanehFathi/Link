@@ -19,7 +19,7 @@ import Projects from "./pages/Projects";
 //Components
 import FilteredProjects from "./components/Projects/FilteredProjects";
 import AddProjectDetails from "./components/Admin/AddProjectDetails";
-import AddProjectDescription from "./components/Admin/AddProjectDescription";
+import AddProjectContent from "./components/Admin/AddProjectContent";
 import AddProjectImages from "./components/Admin/AddProjectImages";
 
 //Loaders
@@ -46,10 +46,7 @@ const router = createBrowserRouter(
       <Route path="adminpanel" element={<AdminPanelLayout />}>
         <Route path="addproject" element={<AddProjectLayout />}>
           <Route path="addprojectdetails" element={<AddProjectDetails />} />
-          <Route
-            path="addprojectdescription"
-            element={<AddProjectDescription />}
-          />
+          <Route path="addprojectcontent" element={<AddProjectContent />} />
           <Route path="addprojectimages" element={<AddProjectImages />} />
         </Route>
       </Route>

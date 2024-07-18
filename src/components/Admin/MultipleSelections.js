@@ -3,10 +3,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
-const MultiChoiceData = ({ title, options, isOpen, onChange }) => {
+const MultipleSelections = ({ title, options, isOpen, onChange }) => {
   const formRef = useRef();
   const [open, setOpen] = useState(isOpen);
-  const [selectedOption, setSelectedOption] = useState("");
+  const [selectedOptions, setSelectedOptions] = useState([]);
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -21,53 +21,42 @@ const MultiChoiceData = ({ title, options, isOpen, onChange }) => {
   }, []);
 
   const handleOptionClick = (option) => {
-    setSelectedOption(option);
-    onChange(option);
-    setOpen(false);
+    const newSelectedOptions = selectedOptions.includes(option)
+      ? selectedOptions.filter((item) => item !== option)
+      : [...selectedOptions, option];
+    setSelectedOptions(newSelectedOptions);
+    onChange(newSelectedOptions);
+    setOpen(false); // Close the dropdown menu after selection
   };
 
   return (
-    <div ref={formRef}>
+    <div ref={formRef} className="relative">
       <div
         type="button"
-        onClick={() => {
-          setOpen(!open);
-        }}
-        className="flex justify-between align-middle px-4  hover:cursor-pointer"
+        onClick={() => setOpen(!open)}
+        className="flex justify-between align-middle px-4 hover:cursor-pointer"
       >
-        <span className="w-full ">{title}</span>
+        <span className="w-full">{title}</span>
         <FontAwesomeIcon
-          icon={faChevronDown}
-          className="font-Inter  pt-2 text-sm "
+          icon={open ? faChevronUp : faChevronDown}
+          className="font-Inter pt-2 text-sm"
         />
       </div>
-      <AnimatePresence initial={true}>
+      <AnimatePresence>
         {open && (
           <motion.div
-            className="pb-2 px-4 text-lg bg-branding3 text-white absolute top-0 left-0 right-0 z-50"
+            className="pb-2 px-4 text-lg bg-branding3 text-white absolute top-8 left-0 right-0 z-50"
             key="modal"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <div
-              type="button"
-              onClick={() => {
-                setOpen(!open);
-              }}
-              className="flex justify-between hover-effect pb-2"
-            >
-              <span className="text-lg">{title}</span>{" "}
-              <FontAwesomeIcon
-                icon={faChevronUp}
-                className="font-Inter  pt-1 text-sm "
-              />
-            </div>
-
             {options.map((option) => (
               <div
-                className="hover-effect cursor-pointer"
                 key={option}
+                className={`hover-effect cursor-pointer p-2 ${
+                  selectedOptions.includes(option) ? "font-bold" : ""
+                }`}
                 onClick={() => handleOptionClick(option)}
               >
                 {option}
@@ -80,4 +69,4 @@ const MultiChoiceData = ({ title, options, isOpen, onChange }) => {
   );
 };
 
-export default MultiChoiceData;
+export default MultipleSelections;
