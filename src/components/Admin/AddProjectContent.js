@@ -5,6 +5,12 @@ const AddProjectContent = () => {
   return (
     <div className="relative">
       <Form>
+        <input
+          type="text"
+          className="w-full bg-transparent border-b border-gray-500 focus:outline-none mb-3"
+          placeholder="Project tagline"
+          name="tagline"
+        />
         <textarea
           className="w-full bg-transparent border-b border-gray-500 focus:outline-none"
           placeholder="Project description"

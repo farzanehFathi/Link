@@ -9,16 +9,14 @@ const AdminPanel = () => {
             to={"addproject"}
             className="py-1 px-6 bg-branding1 hover-effect"
           >
-            Add Project
+            Add A Project
           </Link>
-          <div className="py-1 px-1 bg-branding1 flex align-middle">
-            <input
-              className="w-96 focus:outline-none bg-branding1"
-              type="search"
-              placeholder="Find projet"
-            />
-            <i class="fa-solid fa-magnifying-glass text-lg px-2 block pt-[1px]"></i>
-          </div>
+          <Link
+            to={"findprojects"}
+            className="py-1 px-6 bg-branding1 hover-effect"
+          >
+            Find Projects
+          </Link>
         </div>
 
         <Outlet />

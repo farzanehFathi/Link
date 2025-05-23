@@ -22,7 +22,7 @@ const TextEditor = () => {
           className="py-1 px-3 bg-branding1 hover-effect "
           onClick={addSection}
         >
-          Add New Heading
+          Add A New Heading
         </button>
       </div>
 

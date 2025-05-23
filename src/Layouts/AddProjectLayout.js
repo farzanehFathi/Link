@@ -8,10 +8,7 @@ const AddProjectLayout = () => {
           <NavLink className="block h-12 hover-effect" to="addprojectdetails">
             Add Project Details
           </NavLink>
-          <NavLink
-            className="block h-12 hover-effect"
-            to="addprojectdescription"
-          >
+          <NavLink className="block h-12 hover-effect" to="addprojectcontent">
             Add Project Content
           </NavLink>
           <NavLink className="block h-12 hover-effect" to="addprojectimages">
